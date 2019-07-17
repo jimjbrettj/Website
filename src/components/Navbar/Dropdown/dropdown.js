@@ -22,13 +22,10 @@ window.onclick = function(event) {
 function dropdown() { 
   return (
     <div className="dropdown">
+      {/* think i need to stop event propagation */}
       <div onClick={myFunction} className="dropdown-label">
-        <div className="dropdown-text">
           Dropdown
-        </div>
-        <div className="icon">
-          <img src={icon} alt="Dropdown Arrow"></img>
-        </div>
+        <img src={icon} alt="Dropdown Arrow" className="icon"></img>
       </div>
       <ul id="myDropdown" className="dropdown-content">
         <li>Link 1</li>
