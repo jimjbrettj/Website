@@ -1,6 +1,7 @@
 @import "../variables.scss";
 
 .back {
+  display: block;
   background-color: $secondaryColor;    
   width: 100vw;
   height: 100vh;
