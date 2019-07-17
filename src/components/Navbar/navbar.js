@@ -5,7 +5,7 @@ import './navbar.scss';
 function navbar() {
   return (
       <div className="navbar">
-        <div className="header">Title</div>
+        <div className="header">Title of Page</div>
         <div>
           <Dropdown />
         </div>
