@@ -27,9 +27,9 @@ function dropdown() {
         <img src={icon} alt="Dropdown Arrow" className="icon"></img>
       </div>
       <ul id="myDropdown" className="dropdown-content">
-        <li>Jimmy</li>
-        <li>Matt</li>
-        <li>Max</li>
+        <li>Option 1</li>
+        <li>Option 2</li>
+        <li>Option 3</li>
       </ul>
     </div>
   );

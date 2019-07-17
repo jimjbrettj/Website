@@ -1,0 +1,56 @@
+@import "../../variables.scss";
+
+.subheader1 {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    color: black;
+    font-size: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-family: $primaryFont;
+    height: 34px;
+}
+
+.subheader2 {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    color: black;
+    font-size: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-family: $primaryFont;
+    height: 34px;
+}
+
+.subheader3 {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    color: black;
+    font-size: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-family: $primaryFont;
+    height: 34px;
+}
+
+.subheader1:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+.subheader2:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+.subheader3:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+

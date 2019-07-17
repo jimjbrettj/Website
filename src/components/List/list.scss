@@ -5,18 +5,23 @@ $mainHeight: calc(100vh - 50px);
 .back {
     background-color: $secondaryColor;
     width: 100vw;
-    height: $mainHeight;
+    height: calc(100vh - 50px);
     margin-top: 50px;
+    overflow: hidden;
+    pointer-events: none;
 }
 
 .list {
     position: absolute;
+    display: block;
     border: 2px solid $primaryColor;
-    width: calc(33vw - 20px);
+    width: calc(25vw);
     height: calc((100vh - 50px) / 2);
     margin: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 1%;
+    z-index: 1;
+    overflow-x: hidden;
 }
 
 .header {
@@ -33,16 +38,20 @@ li {
     text-decoration: none;
     display: block;
 }
+
 .triangle0 {
+    display: block;
     width: 0; 
     height: 0; 
     border-left: 300px solid transparent;
     border-right: 300px solid transparent;
     border-bottom: $mainHeight solid $primaryColor;
     opacity: .4;
+    z-index: -1;
 }
 
 .triangle1 {
+    display: block;
     width: 0; 
     height: 0; 
     border-left: 300px solid transparent;
@@ -51,9 +60,11 @@ li {
     opacity: .2;
     margin-top: calc((100vh - 50px)*-1);
     margin-left: -350px;
+    z-index: -1;
 }
 
 .triangle2 {
+    display: block;
     width: 0; 
     height: 0; 
     border-left: 300px solid transparent;
@@ -62,9 +73,11 @@ li {
     opacity: .4;
     margin-top: calc((100vh - 50px)*-1);
     margin-left: 350px;
+    z-index: -1;
 }
 
 .triangle3 {
+    display: block;
     width: 0; 
     height: 0; 
     border-left: 300px solid transparent;
@@ -73,9 +86,11 @@ li {
     opacity: .2;
     margin-top: calc((100vh - 50px)*-1);
     margin-left: 700px;
+    z-index: -1;
 }
 
 .triangle4 {
+    display: block;
     width: 0; 
     height: 0; 
     border-left: 300px solid transparent;
@@ -84,9 +99,11 @@ li {
     opacity: .3;
     margin-top: calc((100vh - 50px)*-1);
     margin-left: 1050px;
+    z-index: -1;
 }
 
 .triangle5 {
+    display: block;
     width: 0; 
     height: 0; 
     border-left: 300px solid transparent;
@@ -95,8 +112,10 @@ li {
     opacity: .4;
     margin-top: calc((100vh - 50px)*-1);
     margin-left: 1400px;
+    z-index: -1;
 }
 .triangle6 {
+    display: block;
     width: 0; 
     height: 0; 
     border-left: 300px solid transparent;
@@ -105,4 +124,5 @@ li {
     opacity: .2;
     margin-top: calc((100vh - 50px)*-1);
     margin-left: 1750px;
+    z-index: -1;
 }

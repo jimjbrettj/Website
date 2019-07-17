@@ -1,13 +1,17 @@
 import React from 'react';
 import Dropdown from'./Dropdown/dropdown'
 import './navbar.scss';
+import Elements from './Elements/elements';
 
 function navbar() {
   return (
       <div className="navbar">
         <div className="header">Title of Page</div>
         <div>
-          <Dropdown />
+           <Elements />
+        </div>
+        <div>
+           <Dropdown />
         </div>
       </div>
   );
