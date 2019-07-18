@@ -8,7 +8,7 @@ $mainHeight: calc(100vh - 50px);
     height: calc(100vh - 50px);
     margin-top: 50px;
     overflow: hidden;
-    pointer-events: none;
+    // /pointer-events: none;
 }
 
 .list {
@@ -16,7 +16,7 @@ $mainHeight: calc(100vh - 50px);
     display: block;
     border: 2px solid $primaryColor;
     width: calc(25vw);
-    height: calc((100vh - 50px) / 2);
+    height: 55vh;
     margin: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 1%;
@@ -28,15 +28,6 @@ $mainHeight: calc(100vh - 50px);
     text-align: center;
     font-family: $primaryFont;
     font-size: 24px;
-}
-
-li {
-    color: black;
-    font-family: $primaryFont;
-    font-size: 22px;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
 }
 
 .triangle0 {
@@ -125,4 +116,23 @@ li {
     margin-top: calc((100vh - 50px)*-1);
     margin-left: 1750px;
     z-index: -1;
+}
+
+.circle {
+    display: inline-block;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+    border-radius: 50%;
+    font-family: $primaryFont;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.circle:hover {
+    opacity: .6;
+    background-color: $primaryColor;
 }
