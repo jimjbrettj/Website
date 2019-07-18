@@ -1,18 +1,6 @@
 import React from 'react';
 import './list.scss';
 
-window.onload = function(){
-  document.getElementById('div1').style.backgroundColor = "Green";
-  document.getElementById('div2').style.backgroundColor = "Green";
-  document.getElementById('div3').style.backgroundColor = "Green";
-  document.getElementById('div4').style.backgroundColor = "Purple";
-  document.getElementById('div5').style.backgroundColor = "Purple";
-  document.getElementById('div6').style.backgroundColor = "Purple";
-  document.getElementById('div7').style.backgroundColor = "Blue";
-  document.getElementById('div8').style.backgroundColor = "Blue";
-  document.getElementById('div9').style.backgroundColor = "Blue";
-}
-
 function color(num) {
   var col;
   switch(num){
@@ -66,13 +54,6 @@ function list() {
         <div onClick={rand} id="div8" className="circle"/>
         <div onClick={rand} id="div9" className="circle"/>
       </div>
-      <div className="triangle0"></div>
-      <div className="triangle1"></div>
-      <div className="triangle2"></div>
-      <div className="triangle3"></div>
-      <div className="triangle4"></div>
-      <div className="triangle5"></div> 
-      <div className="triangle6"></div>
     </div>
   );
 }

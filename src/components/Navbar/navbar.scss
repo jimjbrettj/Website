@@ -1,6 +1,7 @@
 @import "../variables.scss";
 
 .navbar {
+    opacity: .8;
     align-items: center;
     background-color: $primaryColor;
     display: flex;
@@ -20,3 +21,8 @@
     font-weight: bold;
     font-size: 32px;
 };
+
+.navbar:hover {
+    mix-blend-mode: normal;
+    opacity: 1;
+}

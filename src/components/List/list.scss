@@ -30,109 +30,22 @@ $mainHeight: calc(100vh - 50px);
     font-size: 24px;
 }
 
-.triangle0 {
-    display: block;
-    width: 0; 
-    height: 0; 
-    border-left: 300px solid transparent;
-    border-right: 300px solid transparent;
-    border-bottom: $mainHeight solid $primaryColor;
-    opacity: .4;
-    z-index: -1;
-}
-
-.triangle1 {
-    display: block;
-    width: 0; 
-    height: 0; 
-    border-left: 300px solid transparent;
-    border-right: 300px solid transparent;
-    border-top: $mainHeight solid $primaryColor;
-    opacity: .2;
-    margin-top: calc((100vh - 50px)*-1);
-    margin-left: -350px;
-    z-index: -1;
-}
-
-.triangle2 {
-    display: block;
-    width: 0; 
-    height: 0; 
-    border-left: 300px solid transparent;
-    border-right: 300px solid transparent;
-    border-top: $mainHeight solid $primaryColor;
-    opacity: .4;
-    margin-top: calc((100vh - 50px)*-1);
-    margin-left: 350px;
-    z-index: -1;
-}
-
-.triangle3 {
-    display: block;
-    width: 0; 
-    height: 0; 
-    border-left: 300px solid transparent;
-    border-right: 300px solid transparent;
-    border-bottom: $mainHeight solid $primaryColor;
-    opacity: .2;
-    margin-top: calc((100vh - 50px)*-1);
-    margin-left: 700px;
-    z-index: -1;
-}
-
-.triangle4 {
-    display: block;
-    width: 0; 
-    height: 0; 
-    border-left: 300px solid transparent;
-    border-right: 300px solid transparent;
-    border-top: $mainHeight solid $primaryColor;
-    opacity: .3;
-    margin-top: calc((100vh - 50px)*-1);
-    margin-left: 1050px;
-    z-index: -1;
-}
-
-.triangle5 {
-    display: block;
-    width: 0; 
-    height: 0; 
-    border-left: 300px solid transparent;
-    border-right: 300px solid transparent;
-    border-bottom: $mainHeight solid $primaryColor;
-    opacity: .4;
-    margin-top: calc((100vh - 50px)*-1);
-    margin-left: 1400px;
-    z-index: -1;
-}
-.triangle6 {
-    display: block;
-    width: 0; 
-    height: 0; 
-    border-left: 300px solid transparent;
-    border-right: 300px solid transparent;
-    border-top: $mainHeight solid $primaryColor;
-    opacity: .2;
-    margin-top: calc((100vh - 50px)*-1);
-    margin-left: 1750px;
-    z-index: -1;
-}
-
 .circle {
     display: inline-block;
     margin: 20px;
     height: 100px;
     width: 100px;
-    border: 2px solid black;
+    border: 3px solid black;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
     border-radius: 50%;
     font-family: $primaryFont;
     font-size: 18px;
     text-align: center;
     vertical-align: middle;
+    //background-color: $primaryColor;
 }
 
 .circle:hover {
     opacity: .6;
-    background-color: $primaryColor;
+    cursor: pointer;
 }

@@ -6,7 +6,7 @@ import Elements from './Elements/elements';
 function navbar() {
   return (
       <div className="navbar">
-        <div className="header">Title of Page</div>
+        <div className="header"></div>
         <div>
            <Elements />
         </div>
