@@ -5,10 +5,12 @@ import Slideshow from './Slideshow/slideshow';
 
 function main() {
   return (
-   <div className="back">
-     <List />
-     <Slideshow />
-   </div>
+    <div className="back">
+      <div className="c">
+        <List />
+        <Slideshow />
+      </div>
+    </div>
   );
 }
 
