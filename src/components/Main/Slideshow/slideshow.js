@@ -48,13 +48,6 @@ function slideshow() {
       <div className="mySlides fade">
         <img src={Climb5} alt="climb" className="container"/>
       </div>
-
-      <div className="text">
-        <span className="dot"></span> 
-        <span className="dot"></span> 
-        <span className="dot"></span> 
-      </div>
-
     </div>
   );
 }

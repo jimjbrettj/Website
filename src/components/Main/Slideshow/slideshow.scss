@@ -6,8 +6,8 @@ img {vertical-align: middle;}
 .container {
   display: block;
   position: absolute;
-  width: 35vw;
-  height: 35vh;
+  width: calc(100% - 10px);
+  height: calc(100%);
   right: 0;
   bottom: 0;
   margin: 5px;
@@ -36,6 +36,14 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-.text {
-  text-align:center;
-}
+// .text {
+//   display: block;
+//   z-index: 1;
+//   opacity: 1;
+//   text-align: center;
+//   font-family: $primaryFont;
+//   color: $darkFont;
+//   font-style: bolder;
+//   font-size: 45px;
+//   margin-top: 250px;
+// }

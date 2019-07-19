@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   width: 150px;
+  color: $darkFont;
   font-family: $primaryFont;
   font-size: 24px;
 }
@@ -40,7 +41,7 @@
 }
 
 .dropdown-content li {
-  color: black;
+  color: $darkFont;
   font-family: $primaryFont;
   font-size: 18px;
   padding: 12px 16px;

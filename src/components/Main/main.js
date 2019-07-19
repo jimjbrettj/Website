@@ -5,10 +5,21 @@ import Slideshow from './Slideshow/slideshow';
 
 function main() {
   return (
-    <div className="back">
-      <div className="c">
+    <div>
+      <div className="back1">
+        <div className="c">
+          <Slideshow />
+        </div>
+      </div>
+      <div className="back2">
+        <div className="c">
         <List />
-        <Slideshow />
+        </div>
+      </div>
+      <div className="back1">
+        <div className="c">
+
+        </div>
       </div>
     </div>
   );

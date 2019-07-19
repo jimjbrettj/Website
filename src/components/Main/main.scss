@@ -1,12 +1,23 @@
 @import "../variables.scss";
 
-.back {
-  display: block;
+.back1 {
+  display: inline-block;
   background-color: $lightShade;    
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
   max-width: 100%;
+  z-index: -1;
+}
+
+.back2 {
+  display: inline-block;
+  background-color: $primaryColor;  
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  max-width: 100%;
+  z-index: -1;
 }
 
 .c {
