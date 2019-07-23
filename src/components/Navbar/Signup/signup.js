@@ -3,7 +3,7 @@ import './signup.scss';
 
 function signup() {
   return (
-      <div></div>
+      <div className="signInButton">Sign In</div>
   );
 }
 
