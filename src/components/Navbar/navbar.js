@@ -13,13 +13,11 @@ class navbar extends React.Component {
   };
 
   scroll() {
-    console.log("You made it");
     if (window.pageYOffset === 0) {
       this.setState({ show: true});
     } else {
       this.setState({ show: false});
     }
-    console.log(this.state.show);
   };
 
   handleScroll() {

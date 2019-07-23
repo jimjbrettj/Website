@@ -13,7 +13,7 @@ function main() {
       </div>
       <div className="back2">
         <div className="c">
-        <List />
+          <List />
         </div>
       </div>
       <div className="back1">

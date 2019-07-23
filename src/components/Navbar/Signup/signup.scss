@@ -23,3 +23,80 @@
   //opacity: .8;
   border: 3px solid $darkShade;
 }
+
+.popUp {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  left: 10px;
+  top: 60px;
+  background-color: $primaryColor;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5%;
+}
+
+.noPopUp {
+  display: none;
+  position: fixed;
+  left: 10px;
+  top: 60px; 
+  width: 150px;
+}
+
+.popUpText {
+  display: relative;
+  width: 100%;
+  font-family: $primaryFont;
+  color: $darkFont;
+  font-weight: $normalWeight;
+  font-size: 18px;
+}
+
+.form {
+  max-width: 500px;
+}
+
+.form label {
+  position: absolute;
+  margin-top: -30px;
+}
+
+.form div {
+  padding-top: 30px;
+  display: flex;
+}
+
+.form p {
+  position: relative;
+  flex: 1;
+  display: flex;
+}
+
+.form input, .form textarea {
+  flex: 1;
+  margin-right: 20px;
+  outline: none;
+  border: 1px solid #eee;
+  background: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.form button {
+  margin-top: 20px;
+  float: right;
+  margin-right: 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 5px 20px;
+  color: #fff;
+  background: #68b04d;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #8fc942;
+}
