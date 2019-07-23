@@ -1,4 +1,21 @@
-@import "../variables.scss";
+@import "../../assets/variables.scss";
+
+.noNavbar {
+    align-items: center;
+    background-color: $primaryColor;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    max-width: 100%;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+};
 
 .navbar {
     align-items: center;
@@ -11,6 +28,10 @@
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
     z-index: 2;
     max-width: 100%;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
 };
 
 .header {
@@ -21,4 +42,9 @@
     font-weight: bold;
     font-size: 32px;
 };
+ 
+.noNavbar:hover {
+    display: flex;
+    opacity: .8;
+}
 

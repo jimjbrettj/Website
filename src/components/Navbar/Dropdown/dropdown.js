@@ -1,6 +1,7 @@
 import React from 'react';
 import './dropdown.scss';
 import icon from '../../../assets/icons/dropdown.png'
+import Signup from './../Signup/signup';
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -22,6 +23,7 @@ window.onclick = function(event) {
 function dropdown() { 
   return (
     <div className="dropdown">
+      <Signup />
       <div onClick={myFunction} className="dropdown-label">
           Dropdown
         <img src={icon} alt="Dropdown Arrow" className="icon"></img>
