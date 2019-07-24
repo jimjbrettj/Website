@@ -20,7 +20,8 @@ class signup extends React.Component {
   }
 
   handleClickOutside(event) {
-    if (!event.target.matches('.popUp') && !event.target.matches('.signInButton') && this.state.show === true) {
+    if (!event.target.matches('.popUp') && !event.target.matches('.signInButton') && this.state.show === true
+      && !event.target.matches('.name') && !event.target.matches('.pass') && !event.target.matches('.button')) {
       console.log('You clicked outside of me!');
       let st = this.state.show;
       console.log(st);
@@ -39,22 +40,24 @@ class signup extends React.Component {
       <div>
         <div onClick={() => this.handleClick()} className="signInButton">Sign In</div>
         <div className={this.state.show ? "popUp" : "noPopUp"}>
-          <form id="contactForm" class="form">
+          <form id="contactForm" className="form">
             <div>
               <p>
                 <label>Username</label>
-                <input type="text" name="name" id="name" required/>
+                <input className="name" type="text" name="name" id="name" required/>
               </p>
             </div>
             <div>
               <p>
                 <label>Password</label>
-                <input type="text" name="pass" id="pass"/>
+                <input className="pass" type="text" name="pass" id="pass" required/>
               </p>
             </div>
-            <p>
-              <button type="submit">Submit</button>
-            </p>
+            <button className="button" type="submit">
+              <div className="buttonText">
+                Submit
+              </div>
+            </button>
           </form>
         </div>
       </div>

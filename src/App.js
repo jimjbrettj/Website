@@ -1,16 +1,39 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Main from './components/Main/main';
 import Navbar from './components/Navbar/navbar';
 import Fold from './components/Fold/fold'
+import { simpleAction } from './actions/simpleAction';
 
-function App() {
-  return (
-    <div>
-      <Navbar />
-      <Main />
-      <Fold />
-    </div>
-  );
+const mapStateToProps = state => ({
+  ...state
+ })
+
+ const mapDispatchToProps = dispatch => ({
+  simpleAction: () => dispatch(simpleAction())
+ })
+
+class App extends Component {
+
+  simpleAction = (event) => {
+    this.props.simpleAction();
+   }
+
+  render() {
+    return (
+      <div>
+        <Navbar />
+        <Main />
+        <Fold />
+        <button onClick={this.simpleAction}>Test redux action</button>
+        <pre>
+        {
+          JSON.stringify(this.props)
+        }
+        </pre>
+      </div>
+    );
+  }
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
