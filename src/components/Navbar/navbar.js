@@ -29,9 +29,6 @@ class navbar extends React.Component {
         <div onScroll={this.handleScroll()} className={this.state.show ? "navbar" : "noNavbar"}>
           <div className="header"></div>
           <div>
-            <Elements />
-          </div>
-          <div>
             <Dropdown />
           </div>
         </div>

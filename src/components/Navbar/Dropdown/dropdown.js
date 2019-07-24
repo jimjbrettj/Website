@@ -1,6 +1,6 @@
 import React from 'react';
 import './dropdown.scss';
-import icon from '../../../assets/icons/dropdown.png'
+import icon from '../../../assets/icons/lines.png'
 import Signup from './../Signup/signup';
 
 function myFunction() {
@@ -25,7 +25,7 @@ function dropdown() {
     <div className="dropdown">
       <Signup />
       <div onClick={myFunction} className="dropdown-label">
-          Dropdown
+          Settings
         <img src={icon} alt="Dropdown Arrow" className="icon"></img>
       </div>
       <ul id="myDropdown" className="dropdown-content">
