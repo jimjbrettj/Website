@@ -25,6 +25,12 @@ class App extends Component {
         <Navbar />
         <Main />
         <Fold />
+        <button onClick={this.simpleAction}>Test redux action</button>
+        <pre>
+        {
+          JSON.stringify(this.props)
+        }
+        </pre>
       </div>
     );
   }
