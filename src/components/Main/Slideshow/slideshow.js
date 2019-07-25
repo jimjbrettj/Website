@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './slideshow.scss';
 import Climb1 from '../../../assets/images/climb1.jpg';
 import Climb2 from '../../../assets/images/climb2.jpg';
@@ -29,27 +29,29 @@ function showSlides() {
   }
 }
 
-function slideshow() {
-  return (
-    <div className="container">
-      
-      <div className="mySlides fade">
-        <img src={Climb1} alt="climb" className="container"/>
+class slideshow extends Component {
+  render() {
+    return (
+      <div className="container">
+        
+        <div className="mySlides fade">
+          <img src={Climb1} alt="climb" className="container"/>
+        </div>
+        <div className="mySlides fade">
+          <img src={Climb2} alt="climb" className="container"/>
+        </div>
+        <div className="mySlides fade">
+          <img src={Climb3} alt="climb" className="container"/>
+        </div>
+        <div className="mySlides fade">
+          <img src={Climb4} alt="climb" className="container"/>
+        </div>
+        <div className="mySlides fade">
+          <img src={Climb5} alt="climb" className="container"/>
+        </div>
       </div>
-      <div className="mySlides fade">
-        <img src={Climb2} alt="climb" className="container"/>
-      </div>
-      <div className="mySlides fade">
-        <img src={Climb3} alt="climb" className="container"/>
-      </div>
-      <div className="mySlides fade">
-        <img src={Climb4} alt="climb" className="container"/>
-      </div>
-      <div className="mySlides fade">
-        <img src={Climb5} alt="climb" className="container"/>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default slideshow;

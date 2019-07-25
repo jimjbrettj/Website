@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './dropdown.scss';
 import icon from '../../../assets/icons/lines.png'
 import Signup from './../Signup/signup';
@@ -20,21 +20,23 @@ window.onclick = function(event) {
   }
 } 
 
-function dropdown() { 
-  return (
-    <div className="dropdown">
-      <Signup />
-      <div onClick={myFunction} className="dropdown-label">
-          Settings
-        <img src={icon} alt="Dropdown Arrow" className="icon"></img>
+class dropdown extends Component{ 
+  render() {
+    return (
+      <div className="dropdown">
+        <Signup />
+        <div onClick={myFunction} className="dropdown-label">
+            Settings
+          <img src={icon} alt="Dropdown Arrow" className="icon"></img>
+        </div>
+        <ul id="myDropdown" className="dropdown-content">
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+        </ul>
       </div>
-      <ul id="myDropdown" className="dropdown-content">
-        <li>Option 1</li>
-        <li>Option 2</li>
-        <li>Option 3</li>
-      </ul>
-    </div>
-  );
+    );
+  }
 }
 
 export default dropdown;

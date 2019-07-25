@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './signup.scss';
 
 
-class signup extends React.Component {
+class signup extends Component {
   constructor(props) {
     super(props);
 
