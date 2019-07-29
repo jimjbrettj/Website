@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './dropdown.scss';
 import icon from '../../../assets/icons/lines.png'
-import Signup from './../Signup/signup';
+import Signup from '../Signin/signin';
+import { Link } from 'react-router-dom';
+import * as ROUTES from '../../../common/routes';
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -20,7 +22,7 @@ window.onclick = function(event) {
   }
 } 
 
-class dropdown extends Component{ 
+class Dropdown extends Component{ 
   render() {
     return (
       <div className="dropdown">
@@ -30,13 +32,19 @@ class dropdown extends Component{
           <img src={icon} alt="Dropdown Arrow" className="icon"></img>
         </div>
         <ul id="myDropdown" className="dropdown-content">
-          <li>Option 1</li>
-          <li>Option 2</li>
-          <li>Option 3</li>
+          <Link to={ROUTES.LANDING} style={{ textDecoration: 'none' }}>
+            <li>Landing</li>
+          </Link>
+          <Link to={ROUTES.ACCOUNT} style={{ textDecoration: 'none' }}>
+            <li>Account</li>
+          </Link>
+          <Link to={ROUTES.SETTINGS} style={{ textDecoration: 'none' }}>
+            <li>Settings</li>
+          </Link>
         </ul>
       </div>
     );
   }
 }
 
-export default dropdown;
+export default Dropdown;

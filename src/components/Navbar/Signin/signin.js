@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import './signup.scss';
+import './signin.scss';
+import { Link } from 'react-router-dom';
+
+import * as ROUTES from '../../../common/routes';
 
 
 class signup extends Component {
@@ -38,7 +41,9 @@ class signup extends Component {
   render(){
     return (
       <div>
-        <div onClick={() => this.handleClick()} className="signInButton">Sign In</div>
+        <Link to={ROUTES.SIGN_UP}>
+          <div className="signInButton">Sign Up</div>
+        </Link>
         <div className={this.state.show ? "popUp" : "noPopUp"}>
           <form id="contactForm" className="form">
             <div>

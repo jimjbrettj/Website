@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './main.scss';
 import List from '../../components/List/list';
-import Slideshow from './Slideshow/slideshow';
+//import Slideshow from './Slideshow/slideshow';
 
 class main extends Component{
   render() {
@@ -10,7 +10,7 @@ class main extends Component{
         <div className="back1">
           <div className="c">
             <div className="arc"></div>
-            <Slideshow />
+
           </div>
         </div>
         <div className="back2">
