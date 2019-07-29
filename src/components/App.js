@@ -1,43 +1,62 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import Main from './Main/main';
-import Navbar from './Navbar/navbar';
-import Fold from './Fold/fold'
-import { simpleAction } from '../actions/simpleAction';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Navigation from './Navigation/navigation';
+// import { connect } from 'react-redux';
+// import { simpleAction } from '../actions/simpleAction';
+//import Navigation from './Navigation/navigation';
+import {
+  BrowserRouter as Router,
+  Route,
+} from 'react-router-dom';
 
-const mapStateToProps = state => ({
-  ...state
- })
+import LandingPage from './Pages/Landing/landing';
+import SignUpPage from './Pages/Signup/signup';
+import AccountPage from './Pages/Account/account';
+import SettingsPage from './Pages/Settings/settings';
 
- const mapDispatchToProps = dispatch => ({
-  simpleAction: () => dispatch(simpleAction())
- })
+import * as ROUTES from '../common/routes';
+
+// const mapStateToProps = state => ({
+//   ...state
+//  })
+
+//  const mapDispatchToProps = dispatch => ({
+//   simpleAction: () => dispatch(simpleAction())
+//  })
 
 class App extends Component {
 
-  simpleAction = (event) => {
-    this.props.simpleAction();
-   }
+  // simpleAction = (event) => {
+  //   this.props.simpleAction();
+  //  }
 
   render() {
     return (
       <Router>
-        <Navigation />
+        <div>
+          <Route exact path={ROUTES.LANDING} component={LandingPage} />
+          <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
+          <Route path={ROUTES.ACCOUNT} component={AccountPage} />
+          <Route path={ROUTES.SETTINGS} component={SettingsPage} />
+          <Route path={ROUTES.HOME} />
+        </div>  
       </Router>
     );
   }
 }
+export default App;
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+//export default connect(mapStateToProps, mapDispatchToProps)(App);
 
-        // <Navbar />
-        // <Main />
-        // <Fold />
-        // <button onClick={this.simpleAction}>Test redux action</button>
-        // <pre>
-        // {
-        //   JSON.stringify(this.props)
-        // }
-        // </pre>
+// <button onClick={this.simpleAction}>Test redux action</button>
+//         <pre>
+//         {
+//           JSON.stringify(this.props)
+//         }
+//         </pre>
+
+
+// {/* <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
+// <Route path={ROUTES.SIGN_IN} component={SignInPage} />
+// <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
+// <Route path={ROUTES.HOME} component={HomePage} />
+// <Route path={ROUTES.ACCOUNT} component={AccountPage} />
+// <Route path={ROUTES.ADMIN} component={AdminPage} /> */}
