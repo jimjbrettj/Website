@@ -9,6 +9,7 @@ class main extends Component{
       <div>
         <div className="back1">
           <div className="c">
+            <div className="arc"></div>
             <Slideshow />
           </div>
         </div>

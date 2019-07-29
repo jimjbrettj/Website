@@ -13,7 +13,7 @@ class navbar extends React.Component {
   };
 
   scroll() {
-    if (window.pageYOffset === 0) {
+    if (window.pageYOffset <= 250) {
       this.setState({ show: true});
     } else {
       this.setState({ show: false});

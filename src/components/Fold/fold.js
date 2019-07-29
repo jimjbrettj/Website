@@ -5,7 +5,10 @@ class fold extends Component{
   render () {
     return (
       <div className="fold">
-        <div className="head"></div>
+        <div className="text">James Johnson</div>
+        <div className="text">This is my website</div>
+        <div className="text">If you see me on Tinder, swipe right</div>
+        <div className="text">My insta is j_guitar_bro</div>
       </div>
     );
   }

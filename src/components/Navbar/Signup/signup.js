@@ -21,7 +21,7 @@ class signup extends Component {
 
   handleClickOutside(event) {
     if (!event.target.matches('.popUp') && !event.target.matches('.signInButton') && this.state.show === true
-      && !event.target.matches('.name') && !event.target.matches('.pass') && !event.target.matches('.button')) {
+      && !event.target.matches('.name') && !event.target.matches('.pass') && !event.target.matches('.button') && !event.target.matches('.buttonText')) {
       console.log('You clicked outside of me!');
       let st = this.state.show;
       console.log(st);

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './list.scss';
+import beach from '../../assets/icons/beach.png';
+import mountain from '../../assets/icons/mountain.png';
+import controller from '../../assets/icons/controller.png'
 
 
 class list extends Component {
@@ -54,9 +57,15 @@ class list extends Component {
           <div className="header">
             Select some of these
           </div>
-          <div onClick={() => this.rand()} id="div1" className="circle"/>
-          <div onClick={() => this.rand()} id="div2" className="circle"/>
-          <div onClick={() => this.rand()} id="div3" className="circle"/>
+          <div onClick={() => this.rand()} id="div1" className="circle">
+            <img src={beach} alt="Beach" className="iconWrap"></img>
+          </div>
+          <div onClick={() => this.rand()} id="div2" className="circle">
+            <img src={mountain} alt="Mountain" className="iconWrap"></img>
+          </div>
+          <div onClick={() => this.rand()} id="div3" className="circle">
+            <img src={controller} alt="Beach" className="iconWrap"></img>
+          </div>
           <div onClick={() => this.rand()} id="div4" className="circle"/>
           <div onClick={() => this.rand()} id="div5" className="circle"/>
           <div onClick={() => this.rand()} id="div6" className="circle"/>

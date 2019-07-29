@@ -2,6 +2,7 @@
 
 .back1 {
   display: inline-block;
+  overflow: hidden;
   background-color: $lightShade;    
   width: 100vw;
   height: 100vh;
@@ -24,8 +25,24 @@
   display: block;
   position: relative;
   //background-color: green; //$lightShade; 
-  width: calc(100vw - 400px);
+  width: calc(100vw - 600px);
   height: 100%;
-  margin-left:200px;
+  margin-left: 300px;
 }
 
+.arc {
+  overflow: hidden;
+  background-image: linear-gradient(to right, rgb(4, 248, 252) , rgba(244, 16, 252, 0.959));
+  border: 2px solid $primaryFont;
+  display: inline-block;
+  min-width: 200vw;
+  min-height: 125vh;
+  margin-top: -500px;
+  margin-left: -60vw;
+  padding: 0.5em;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  z-index: 0;
+}

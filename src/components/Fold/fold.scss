@@ -10,9 +10,12 @@
     max-width: 100%;
 }
 
-.head {
+.text {
+    margin-top: 10px;
+    left: 20px;
     color: $lightFont;
     text-align: center;
     font-family: $primaryFont;
-    font-size: 34px;
+    font-weight: $normalWeight;
+    font-size: 18px;
 }

@@ -2,6 +2,7 @@
 
 .noNavbar {
     align-items: center;
+    //background-image: linear-gradient(to right, rgb(4, 248, 252) , rgba(244, 16, 252, 0.959));
     background-color: $primaryColor;
     display: flex;
     position: fixed;
@@ -19,6 +20,7 @@
 
 .navbar {
     align-items: center;
+    //background-image: linear-gradient(to right, rgb(4, 248, 252) , rgba(244, 16, 252, 0.959));
     background-color: $primaryColor;
     display: flex;
     position: fixed;
