@@ -14,6 +14,8 @@ import SettingsPage from './Pages/Settings/settings';
 
 import * as ROUTES from '../common/routes';
 
+// const store = createStore(() => [], {}, applyMiddleware())
+
 // const mapStateToProps = state => ({
 //   ...state
 //  })
@@ -30,14 +32,14 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
-        <div>
-          <Route exact path={ROUTES.LANDING} component={LandingPage} />
-          <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
-          <Route path={ROUTES.ACCOUNT} component={AccountPage} />
-          <Route path={ROUTES.SETTINGS} component={SettingsPage} />
-          <Route path={ROUTES.HOME} />
-        </div>  
+        <Router>
+          <div>
+            <Route exact path={ROUTES.LANDING} component={LandingPage} />
+            <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
+            <Route path={ROUTES.ACCOUNT} component={AccountPage} />
+            <Route path={ROUTES.SETTINGS} component={SettingsPage} />
+            <Route path={ROUTES.HOME} />
+          </div>  
       </Router>
     );
   }
