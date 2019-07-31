@@ -1,9 +1,17 @@
-/*
- src/actions/simpleAction.js
-*/
-export const simpleAction = () => dispatch => {
+import { INCREMENT, DECREMENT } from './types';
+
+export const increment = () => dispatch => {
+    console.log("Incrementing");
+    dispatch({
+      type: INCREMENT,
+      payload: 1
+    })
+}
+
+export const decrement = (val) => dispatch => {
+  console.log("Decrementing");
   dispatch({
-    type: 'SIMPLE_ACTION',
-    payload: 'result_of_simple_action'
+    type: DECREMENT,
+    payload: val
   })
 }

@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
-// import { simpleAction } from '../actions/simpleAction';
-//import Navigation from './Navigation/navigation';
 import {
   BrowserRouter as Router,
   Route,
@@ -14,22 +11,7 @@ import SettingsPage from './Pages/Settings/settings';
 
 import * as ROUTES from '../common/routes';
 
-// const store = createStore(() => [], {}, applyMiddleware())
-
-// const mapStateToProps = state => ({
-//   ...state
-//  })
-
-//  const mapDispatchToProps = dispatch => ({
-//   simpleAction: () => dispatch(simpleAction())
-//  })
-
 class App extends Component {
-
-  // simpleAction = (event) => {
-  //   this.props.simpleAction();
-  //  }
-
   render() {
     return (
         <Router>
@@ -45,16 +27,6 @@ class App extends Component {
   }
 }
 export default App;
-
-//export default connect(mapStateToProps, mapDispatchToProps)(App);
-
-// <button onClick={this.simpleAction}>Test redux action</button>
-//         <pre>
-//         {
-//           JSON.stringify(this.props)
-//         }
-//         </pre>
-
 
 // {/* <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
 // <Route path={ROUTES.SIGN_IN} component={SignInPage} />
