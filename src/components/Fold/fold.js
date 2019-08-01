@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { increment, decrement } from '../../actions/simpleAction';
+import { loginChange } from '../../actions/accountActions';
 import './fold.scss';
 
 class Fold extends Component{
@@ -16,7 +17,7 @@ class Fold extends Component{
     return (
       <div className="fold">
         <div className="text">State is: {this.props.simple}</div>
-        <div className="text">James Johnson</div>
+        <div className="text">Login Status is: {this.props.login.toString()}</div>
         <div className="text">I hope you are having a great day</div>
         <div className="text">Shred the gnar</div>
       </div>
@@ -27,11 +28,14 @@ class Fold extends Component{
 Fold.propTypes = {
   increment: PropTypes.func.isRequired,
   decrement: PropTypes.func.isRequired,
-  simple: PropTypes.number.isRequired
+  simple: PropTypes.number.isRequired,
+  loginChange: PropTypes.func.isRequired,
+  login: PropTypes.bool.isRequired
 }
 
 const mapStateToProps = state => ({
-  simple: state.simple.value
+  simple: state.simple.value,
+  login: state.login.value
 });
 
-export default connect(mapStateToProps, { increment, decrement })(Fold);
+export default connect(mapStateToProps, { increment, decrement, loginChange })(Fold);

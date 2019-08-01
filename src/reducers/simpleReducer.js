@@ -7,16 +7,14 @@ const initialState = {
 export default function(state = initialState, action) {
   switch(action.type){
     case INCREMENT:
-      console.log("Reducing1");
       return {
         ...state,
-        value: action.payload //initialState.value + action.payload
+        value: action.payload
       };
       case DECREMENT:
-          console.log("Reducing2");
           return {
             ...state,
-            value: action.payload //initialState.value + action.payload
+            value: action.payload
           }
     default: 
       return state;
