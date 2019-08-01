@@ -5,8 +5,15 @@ import { Provider } from 'react-redux'
 import './index.scss';
 import App from '../src/components/App';
 import * as serviceWorker from './serviceWorker';
+import throttle from 'lodash/throttle';
 
 import store from './store';
+import { saveState } from './localStorage';
+
+store.subscribe(throttle(() => {
+  saveState({
+    login: store.getState().login});
+}, 1000));
 
 
 ReactDOM.render(
