@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './main.scss';
-import List from '../../components/List/list';
+//import List from '../../components/List/list';
 //import Slideshow from './Slideshow/slideshow';
 
 class main extends Component{
@@ -15,7 +15,6 @@ class main extends Component{
         </div>
         <div className="back2">
           <div className="c">
-            <List />
           </div>
         </div>
         <div className="back1">

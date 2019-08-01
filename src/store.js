@@ -18,11 +18,3 @@ const store = createStore(
 );
 
 export default store;
-
-// export default function configureStore(initialState={}) {
-//  return createStore(
-//    rootReducer,
-//    initialState,
-//    applyMiddleware(thunk)
-//  );
-// }
