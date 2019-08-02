@@ -3,8 +3,9 @@
 .content {
   display: flex;
   width: 100%;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 100px);
   justify-content: center;
+  overflow: hidden;
 }
 
 .createAccountWrapper {
@@ -12,17 +13,17 @@
   justify-content: center;
   background-color: $darkShade;
   width: calc(100vw - 1200px);
-  height: calc(100% - 150px);
-  margin-left: 600px;
-  margin-right: 600px;
-  margin-top: 100px;
+  height: calc(100% - 50px);
+  // margin-left: 600px;
+  //margin-right: 600px;
+  margin-top: 50px;
   color: $lightFont;
   font-family: $primaryFont;
-  border-radius: 20px;
+  // border-radius: 20px;
 }
 
 .title {
-  margin-top: 20px;
+  margin-top: 100px;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -99,4 +100,21 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+}
+
+.triLeft {
+  margin-top: 50px;
+  width: 0; 
+  height: 0; 
+  border-top: 765px solid transparent;
+  border-bottom: 200vh solid transparent; 
+  border-right:600px solid $darkShade; 
+}
+.triRight {
+  margin-top: 50px;
+  width: 0; 
+  height: 0; 
+  border-top: 765px solid transparent;
+  border-bottom: 200vh solid transparent; 
+  border-left:600px solid $darkShade; 
 }

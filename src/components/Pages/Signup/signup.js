@@ -13,6 +13,7 @@ class Signup extends Component {
       <div>
         <Navbar />
           <div className='content'>
+            <div className="triLeft"></div>
             <div className="createAccountWrapper">
               <div className="title">
                 Create an Account
@@ -44,6 +45,7 @@ class Signup extends Component {
                 </button>
               </form>
             </div>
+            <div className="triRight"></div>
           </div>
         <Fold />
       </div>
