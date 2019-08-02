@@ -34,7 +34,7 @@
   overflow: hidden;
   background-image: linear-gradient(to right, rgb(4, 248, 252) , rgba(244, 16, 252, 0.959));
   border: 2px solid $primaryFont;
-  display: inline-block;
+  display: flex;
   min-width: 200vw;
   min-height: 125vh;
   margin-top: -500px;
@@ -45,4 +45,15 @@
   border-right-color: transparent;
   border-top-color: transparent;
   z-index: 0;
+  justify-content: center;
+}
+
+.titleText {
+  margin: auto;
+  margin-top: 600px;
+  color: $darkFont;
+  font-size: 50px;
+  font-weight: $normalWeight;
+  font-family: $primaryFont;
+  z-index: 1;
 }

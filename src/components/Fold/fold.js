@@ -17,7 +17,7 @@ class Fold extends Component{
     return (
       <div className="fold">
         <div className="text">State is: {this.props.simple}</div>
-        <div className="text">Login Status is: {this.props.login.toString()}</div>
+        <div className="text">Login Status is: {this.props.login.toString()} and user is: {this.props.user}</div>
         <div className="text">I hope you are having a great day</div>
         <div className="text">Shred the gnar</div>
       </div>
@@ -30,12 +30,14 @@ Fold.propTypes = {
   decrement: PropTypes.func.isRequired,
   simple: PropTypes.number.isRequired,
   loginChange: PropTypes.func.isRequired,
-  login: PropTypes.bool.isRequired
+  login: PropTypes.bool.isRequired,
+  user: PropTypes.string
 }
 
 const mapStateToProps = state => ({
   simple: state.simple.value,
-  login: state.login.value
+  login: state.login.value,
+  user: state.login.name
 });
 
 export default connect(mapStateToProps, { increment, decrement, loginChange })(Fold);

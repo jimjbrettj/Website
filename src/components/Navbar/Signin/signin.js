@@ -23,6 +23,7 @@ class Signup extends Component {
 
   componentWillUnmount() {
     document.removeEventListener('mousedown', (event) => this.handleClickOutside(event));
+    document.getElementById('contactForm').removeEventListener('submit', () => this.changeLoginStatus());
   }
 
   handleClickOutside(event) {
@@ -35,18 +36,29 @@ class Signup extends Component {
   }
 
   changeLoginStatus() {
-    this.props.loginChange();
+    var input = document.getElementById('name').value;
+    if (!this.props.login) {
+      this.props.loginChange(input);
+    } else {
+      this.props.loginChange('');
+    }
   }
 
   handleClick() {
-    let st = this.state.show;
+    if (this.props.login) {
+      this.props.loginChange('');
+    } else {
+      let st = this.state.show;
     this.setState({ show: !st});
+    }
   };
 
   render(){
     return (
       <div>
-        <div onClick={() => this.handleClick()} className="signInButton">Login</div>
+        <div onClick={() => this.handleClick()} className={this.props.login ? "logOutButton" : "signInButton"}>
+          {this.props.login ? "Logout" : "Sign In"}
+        </div>
         <div className={this.state.show ? "popUp" : "noPopUp"}>
           <form id="contactForm" className="form">
             <div>
@@ -80,11 +92,13 @@ class Signup extends Component {
 
 Signup.propTypes = {
   loginChange: PropTypes.func.isRequired,
-  login: PropTypes.bool.isRequired
+  login: PropTypes.bool.isRequired,
+  user: PropTypes.string
 }
 
 const mapStateToProps = state => ({
-  login: state.login.value
+  login: state.login.value,
+  user: state.login.name
 });
 
 export default connect(mapStateToProps, { loginChange })(Signup);

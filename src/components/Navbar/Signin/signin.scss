@@ -18,6 +18,28 @@
   margin-left: 10px;
 }
 
+.logOutButton {
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  left: 0;
+  color: $darkShade;
+ // border: 2px solid $darkShade;
+  // border-radius: 5px;
+  // box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  font-size: 24px;
+  font-weight: $normalWeight;
+  font-family: $primaryFont;
+  //width: 100px;
+  height: calc(100% - 20px);
+  margin-left: 15px;
+}
+
+.logOutButton:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
 .signInButton:hover {
   cursor: pointer;
   //opacity: .8;

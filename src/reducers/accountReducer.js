@@ -1,7 +1,8 @@
 import { LOGIN_CHANGE } from '../actions/accountActionTypes';
 
 const initialState = {
-  value: false
+  value: false,
+  name: ''
 }
 
 export default function(state = initialState, action) {
@@ -10,7 +11,8 @@ export default function(state = initialState, action) {
       console.log(state.value);
       return {
         ...state,
-        value: !state.value
+        value: !state.value,
+        name: action.payload
       };
     default: 
       return state;

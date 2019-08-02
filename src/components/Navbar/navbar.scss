@@ -50,3 +50,13 @@
     opacity: 1;
 }
 
+.welcomeText {
+    display: flex;
+    justify-content: center;
+    //width: 150px;
+    color: $darkFont;
+    font-family: $primaryFont;
+    font-size: 24px;
+    height: 34px;
+  }
+

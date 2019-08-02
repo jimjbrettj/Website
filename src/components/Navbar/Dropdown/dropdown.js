@@ -3,6 +3,9 @@ import './dropdown.scss';
 import icon from '../../../assets/icons/lines.png'
 import Signup from '../Signin/signin';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { loginChange } from '../../../actions/accountActions';
 import * as ROUTES from '../../../common/routes';
 
 function myFunction() {
@@ -28,7 +31,7 @@ class Dropdown extends Component{
       <div className="dropdown">
         <Signup />
         <div onClick={myFunction} className="dropdown-label">
-            Settings
+          Settings
           <img src={icon} alt="Dropdown Arrow" className="icon"></img>
         </div>
         <ul id="myDropdown" className="dropdown-content">
@@ -47,4 +50,15 @@ class Dropdown extends Component{
   }
 }
 
-export default Dropdown;
+Signup.propTypes = {
+  loginChange: PropTypes.func.isRequired,
+  login: PropTypes.bool.isRequired,
+  user: PropTypes.string
+}
+
+const mapStateToProps = state => ({
+  login: state.login.value,
+  user: state.login.name
+});
+
+export default connect(mapStateToProps, { loginChange })(Dropdown);

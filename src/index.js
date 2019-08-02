@@ -15,7 +15,6 @@ store.subscribe(throttle(() => {
     login: store.getState().login});
 }, 1000));
 
-
 ReactDOM.render(
   <Provider store={store}>
     <App />
