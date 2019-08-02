@@ -40,9 +40,7 @@ class Signup extends Component {
                 </div>
 
                 <button className="button" type="submit">
-                  <div className="butText">
-                    Submit
-                  </div>
+                  Submit
                 </button>
               </form>
             </div>
