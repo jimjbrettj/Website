@@ -14,7 +14,7 @@ class Main extends Component{
           <div className="c">
             <div className="arc">
             <div className="titleText">
-              {this.props.login ? "Welcome " + this.props.user + "!" : "Login!"}
+              {this.props.login ? ("Welcome " + this.props.user + "!") : "Login!"}
             </div>
             </div>
           </div>
