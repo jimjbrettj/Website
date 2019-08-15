@@ -13,7 +13,7 @@ class Fold extends Component{
   render () {
     return (
       <div className="fold">
-        <div className="text">You can alter this text {this.props.simple}</div>
+        <div className="text">You can alter this text</div>
         <div className="text">Login Status is: {this.props.login.toString()} and user is: {this.props.user}</div>
         <div className="text">I hope you are having a great day</div>
         <div className="text">Shred the gnar</div>
