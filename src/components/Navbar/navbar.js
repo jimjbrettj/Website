@@ -1,7 +1,6 @@
 import React from 'react';
 import Dropdown from'./Dropdown/dropdown'
 import './navbar.scss';
-import Elements from './Elements/elements';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { loginChange } from '../../actions/accountActions';
